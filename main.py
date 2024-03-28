@@ -19,7 +19,7 @@ def get_fed_rate():
 
 
 def send_email(fed_rate):
-    message = (f"Subject: Current Fed Interest\n\n"
+    message = ("Subject: Current Fed Interest\n\n"
                f"The currenter federal reserve interest rate sits at {fed_rate}%.")
     with smtplib.SMTP("smtp.gmail.com", port=587) as connection:
         connection.starttls()
